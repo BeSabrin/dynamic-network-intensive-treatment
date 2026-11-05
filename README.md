@@ -1,4 +1,3 @@
-================================================================================
 TESTING IMPLICATIONS OF THE NETWORK THEORY OF MENTAL DISORDERS IN INTENSIVE
 SHORT-TERM TREATMENT
 ================================================================================
@@ -35,6 +34,10 @@ Two R scripts, intended to be run in the order listed.
        effect of week, testing robustness to unmodeled linear trends in
        overall symptom prevalence
 
+PREREGISTRATION
+-----------------
+This study is a preregistered secondary analysis. The preregistration is available at:
+https://osf.io/bkngs/overview
 
 DATA AVAILABILITY
 -----------------
@@ -49,5 +52,3 @@ Provided as-is for reproducibility purposes, without warranty of any kind.
 CONTACT
 -------
 Sabrina Benz — sabrina.benz@psy.lmu.de
-
-================================================================================
