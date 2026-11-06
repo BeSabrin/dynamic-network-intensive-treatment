@@ -37,7 +37,7 @@
 #                               network construction & plotting
 
 # Assumes the preparatory analyses script has already been run to select 
-# Model 1. Followed by a separate sensitivity-check script.
+# Model 1.
 
 # last updated: September 2026
 
@@ -46,7 +46,6 @@
 ###### 1. Model estimation #####
 ################################
 
-# shortcut, if 0_preparatory analyses did already run: 
 # load best fitting model (model 1) with 3000 iterations
 load("models1_3000.rda")
 
@@ -54,9 +53,6 @@ library("brms")
 library("ggplot2")
 library("ggmcmc")
 library("dplyr")
-
-# alternatively: load data
-dat_N <- read.csv2("data_preprocessed.csv", sep= ";")
 
 ### Defining priors ###
 
@@ -101,7 +97,7 @@ model1_mood_3000 <-brm(
   control = list(adapt_delta = 0.99), 
   save_pars = save_pars(all = TRUE))
 
-#save(model1_mood_3000, file = "model1_mood_3000.rda")
+save(model1_mood_3000, file = "model1_mood_3000.rda")
 summary(model1_mood_3000)
 
 # check convergence 
@@ -148,7 +144,7 @@ model1_loss_interest_3000 <-brm(
   control = list(adapt_delta = 0.99), 
   save_pars = save_pars(all = TRUE))
 
-#save(model1_loss_interest_3000, file = "model1_loss_interest_3000.rda")
+save(model1_loss_interest_3000, file = "model1_loss_interest_3000.rda")
 summary(model1_loss_interest_3000)
 
 # check convergence
@@ -195,7 +191,7 @@ model1_decrease_activity_3000 <-brm(
   control = list(adapt_delta = 0.99), 
   save_pars = save_pars(all = TRUE))
 
-# save(model1_decrease_activity_3000, file = "model1_decrease_activity_3000.rda")
+save(model1_decrease_activity_3000, file = "model1_decrease_activity_3000.rda")
 summary(model1_decrease_activity_3000)
 
 # check convergence
@@ -242,7 +238,7 @@ model1_nervous_3000 <-brm(
   control = list(adapt_delta = 0.99), 
   save_pars = save_pars(all = TRUE))
 
-# save(model1_nervous_3000, file = "model1_nervous_3000.rda")
+save(model1_nervous_3000, file = "model1_nervous_3000.rda")
 summary(model1_nervous_3000)
 
 # check convergence
@@ -289,7 +285,7 @@ model1_tension_3000 <-brm(
   control = list(adapt_delta = 0.99), 
   save_pars = save_pars(all = TRUE))
 
-# save(model1_tension_3000, file = "model1_tension_3000.rda")
+save(model1_tension_3000, file = "model1_tension_3000.rda")
 summary(model1_tension_3000)
 
 # check convergence
@@ -336,7 +332,7 @@ model1_arousal_3000 <-brm(
   control = list(adapt_delta = 0.99), 
   save_pars = save_pars(all = TRUE))
 
-# save(model1_arousal_3000, file = "model1_arousal_3000.rda")
+save(model1_arousal_3000, file = "model1_arousal_3000.rda")
 summary(model1_arousal_3000)
 
 # check convergence
@@ -480,8 +476,8 @@ library("jtools")
 
 # load data and models
 load("models1_3000.rda")
-dat_N <- read.csv2("data_preprocessed.csv", sep= ";")
-load("preprocessing_workspace.RData")
+
+# load data
 
 #### calculate Bayesian pseudo R2 
 bayes_R2(model1_mood_3000)
@@ -1725,7 +1721,7 @@ library("ggplot2")
 library("ggmcmc")
 library("dplyr")
 
-dat_N <- read.csv2("data_preprocessed.csv", sep= ";")
+# load data
 
 ### Defining priors ###
 
