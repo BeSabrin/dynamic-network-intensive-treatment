@@ -4,10 +4,12 @@ SHORT-TERM TREATMENT
 
 DESCRIPTION
 -----------
-The preparatory and main analyses are described in the manuscript "Testing 
+This repository contains the analysis code for the manuscipt "Testing 
 implications of the network theory of mental disorders in intensive short-term 
-treatment" (Benz et al.) and in more detail in the supplemental material of 
-the manuscript.
+treatment" (Benz et al.).
+
+The analyses are described in the manuscript and in more detail in the
+Supplement.
 
 Large parts of the code are adapted from the preliminary study by Schumacher
 et al. (2023): https://osf.io/fhqmk/overview
@@ -15,7 +17,7 @@ et al. (2023): https://osf.io/fhqmk/overview
 
 CONTENTS
 --------
-Two R scripts, intended to be run in the order listed.
+The repository condains 2 R scripts, intended to be run in the order listed.
 
 1) 0_preparatory_analyses.R
    Fits and compares six multilevel logistic model variants (random intercept
@@ -34,19 +36,38 @@ Two R scripts, intended to be run in the order listed.
        effect of week, testing robustness to unmodeled linear trends in
        overall symptom prevalence
 
+
 PREREGISTRATION
 -----------------
 This study is a preregistered secondary analysis. The preregistration is available at:
 https://osf.io/bkngs/overview
+
 
 DATA AVAILABILITY
 -----------------
 Patient data are not included in this repository. 
 
 
+CITATION AND ATTRIBUTION
+------------------------
+Large parts of this code were adapted from code accompanying Schumacher et al. (2023).
+Original code: https://osf.io/fhqmk/overview
+
+Please retain attribution to the original code when adapting or redistributing
+these materials.
+
+
 DISCLAIMER
 ----------
 Provided as-is for reproducibility purposes, without warranty of any kind.
+
+
+LICENSE
+-------
+This code is licensed under the Creative Commons Attribution-
+NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 
 CONTACT
